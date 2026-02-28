@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Official Video</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#020617,#0f172a,#020617);
+    color:white;
+    text-align:center;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:60px 20px;
+    animation:fade 1.2s ease;
+}
+
+@keyframes fade{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+.video-box{
+    margin-top:40px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 40px rgba(0,0,0,.8);
+    transition:.4s;
+}
+
+.video-box:hover{
+    transform:scale(1.02);
+    box-shadow:0 0 60px rgba(0,255,255,.4);
+}
+
+video{
+    width:100%;
+    display:block;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:40px;
+    padding:15px 30px;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Official Presentation</h1>
+    <p>Click play to watch the video</p>
+
+    <div class="video-box">
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <a class="btn" href="#">Contact Us</a>
+</div>
+
+</body>
+</html>
